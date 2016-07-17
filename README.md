@@ -20,9 +20,50 @@ Candidates are asked to perform this test remotely and submit their responses to
 
 
 # Answer
- a) Directly indicate to the user what "I'm Looking for... " is. The search bar by itself is not enough to give a clue to the user to use a search tool.
- b) and indicative search box on the content body will be a better answer:
+ This is how I will implement 
+ 
+```html
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #255;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#courts">Courts</a></li>
+  <li><a href="#procedure rules">Procedure rule</a></li>
+  <li><a href="#offenders">Offenders</a></li>
+  <li><a href="#youth justice">Youth justice</a></li>
+</ul>
+
+</body>
+</html>
+```
 
   Focus specifically on not disadvantaging users of:
 
@@ -39,6 +80,8 @@ Candidates are asked to perform this test remotely and submit their responses to
       "Assistive technologies are software or equipment that people with disabilities use to improve interaction with the web, 
       such as screen readers that read aloud web pages for people who cannot read text, screen magnifiers for people with some types of low vision, 
       and voice recognition software and selection switches for people who cannot use a keyboard or mouse."
+      
+        It's easy and relatively inexpensive for website developers to provide transcripts for podcasts and audio files. There are also transcription services that create text transcripts in HTML format.
   
 2. How would you implement a version of [GOV.UK browse](https://www.gov.uk/browse/) for a new digital service.
 
@@ -51,9 +94,10 @@ Candidates are asked to perform this test remotely and submit their responses to
  # Answer
     1. Site is mobile friendly, but...
     2. Desktop-size page lack of welcoming screen (I don't know what to do there)
-        a. Solution : Develop a welcoming message that explains how this section of the site works
-        b. On mobile : Include a welcome message that explains to tap on the sections to get more information.
-The solution is nothing complex, just a couple paragraphs that describes what the user can do in this page.
+     *   a. Solution : Develop a welcoming message that explains how this section of the site works
+     *   b. On mobile : Include a welcome message that explains to tap on the sections to get more information.
+ The solution is nothing complex, just a couple paragraphs that describes what the user can do in this page.
+
 ```
 <p>Welcome</p>
 ```
