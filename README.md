@@ -205,10 +205,10 @@ Please amend the code and submit your changes as a pull request.
         Click Me
     </button>
 ```
- # Answer
-  - bad commenting: this is a css comment and content shows html/js code
-  
-  - if logic layer is javascript and presentation is HTML, it is bad to mix the logic layer and the presentation layer in one sentence. Each one of them must be separated:
+# Answer
+
+     - bad commenting: this is a css comment and content shows html/js code
+     - if logic layer is javascript and presentation is HTML, it is bad to mix the logic layer and the presentation layer in one sentence. Each one of them must be separated:
   
  ```javascript
  $("#xyz").click(function(){
